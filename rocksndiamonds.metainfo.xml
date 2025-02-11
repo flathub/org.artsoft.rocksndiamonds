@@ -6,7 +6,7 @@
   <developer_name>Artsoft Entertainment</developer_name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
-  <launchable type="desktop-id">rocksndiamonds.desktop</launchable>
+  <launchable type="desktop-id">org.artsoft.rocksndiamonds.desktop</launchable>
   <description>
     <p>
       Rocks 'n' Diamonds is a action puzzle game where you have to navigate a maze
