@@ -15,7 +15,7 @@
     </p>
   </description>
   <screenshots>
-    <screenshot>
+    <screenshot type="default">
       <image type="source">https://www.artsoft.org/rocksndiamonds/screenshots/mainmenu.png</image>
     </screenshot>
     <screenshot>
