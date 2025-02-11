@@ -1,6 +1,6 @@
 app-id: org.artsoft.rocksndiamonds
 runtime: org.freedesktop.Platform
-runtime-version: 21.08
+runtime-version: 24.08
 sdk: org.freedesktop.Sdk
 command: rocksndiamonds
 finish-args:
@@ -24,8 +24,8 @@ modules:
       - install -Dm 644 rocksndiamonds.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
     sources:
       - type: archive
-        url: https://www.artsoft.org/RELEASES/linux/rocksndiamonds/rocksndiamonds-4.3.2.1.tar.gz
-        sha256: dba4b5ff63561a258348cd3b330d2084ab7ba647d26b6c21f996d93d76ea8439
+        url: https://www.artsoft.org/RELEASES/linux/rocksndiamonds/rocksndiamonds-4.4.0.3-linux.tar.gz
+        sha256: 7c5ccde14108e1bdb21b275ae4527e97ff43f3cc229188ee82dc7cffd20aa6d9
       - type: shell
         commands:
           - rm rocksndiamonds
