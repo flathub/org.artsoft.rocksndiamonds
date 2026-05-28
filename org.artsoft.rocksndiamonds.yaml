@@ -11,6 +11,7 @@ finish-args:
   - --socket=pulseaudio
 
 modules:
+  - shared-modules/SDL2/SDL2_image.json
   - name: rocksndiamonds
     buildsystem: simple
     build-commands:
