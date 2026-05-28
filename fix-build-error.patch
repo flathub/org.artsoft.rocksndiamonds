@@ -1,0 +1,32 @@
+From 897c2fdd672f5a1df8aaa64728eb280322dcb97a Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Fri, 29 May 2026 00:01:02 +0300
+Subject: [PATCH] Fix build error
+
+Based on Gemini AI suggestions
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ src/Makefile | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/Makefile b/src/Makefile
+index 7a128e7..7b1d0d2 100644
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -110,10 +110,10 @@ EXTRA_LDFLAGS = $(SDL_FMTS) -s INITIAL_MEMORY=81920000 -s ALLOW_MEMORY_GROWTH=1 
+ DATA_DIRS = conf docs levels graphics sounds music
+ FILE_PACKAGER_ARGS = --preload $(DATA_DIRS) --js-output=$(DATA_FILE).js
+ else
+-SDL_LIBS = -lSDL2_image -lSDL2_mixer -lSDL2_net
++SDL_LIBS = -lSDL2_image -lSDL2_mixer -lSDL2_net -L/app/lib -Wl,-rpath,/app/lib
+ endif
+ 
+-SYS_CFLAGS := -DTARGET_SDL2 $(shell sdl2-config --cflags)
++SYS_CFLAGS := -DTARGET_SDL2 $(shell sdl2-config --cflags) -isystem /app/include/SDL2
+ SYS_LDFLAGS := $(SDL_LIBS) $(shell sdl2-config --libs) -lm -lz
+ endif
+ 
+--
+libgit2 1.7.2
+

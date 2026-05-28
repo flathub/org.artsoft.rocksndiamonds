@@ -27,6 +27,8 @@ modules:
       - type: archive
         url: https://www.artsoft.org/RELEASES/linux/rocksndiamonds/rocksndiamonds-4.4.0.3-linux.tar.gz
         sha256: 7c5ccde14108e1bdb21b275ae4527e97ff43f3cc229188ee82dc7cffd20aa6d9
+      - type: patch
+        path: fix-build-error.patch
       - type: shell
         commands:
           - rm rocksndiamonds
