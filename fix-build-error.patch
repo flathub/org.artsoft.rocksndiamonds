@@ -19,7 +19,7 @@ index 7a128e7..7b1d0d2 100644
  FILE_PACKAGER_ARGS = --preload $(DATA_DIRS) --js-output=$(DATA_FILE).js
  else
 -SDL_LIBS = -lSDL2_image -lSDL2_mixer -lSDL2_net
-+SDL_LIBS = -lSDL2_image -lSDL2_mixer -lSDL2_net -L/app/lib -Wl,-rpath,/app/lib
++SDL_LIBS = -lSDL2_image -lSDL2_mixer -lSDL2_net -L/app/lib
  endif
  
 -SYS_CFLAGS := -DTARGET_SDL2 $(shell sdl2-config --cflags)
